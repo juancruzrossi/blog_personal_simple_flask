@@ -3,6 +3,6 @@ Blog personal simple creado en Flask donde se crean, actualizan y eliminan posts
 
 Modulos necesarios instalados con 'pip' bajo el entorno virtual creado inicialmente:
 
-Flask
+Flask\n
 SQLALchemy
 Psycopg2
