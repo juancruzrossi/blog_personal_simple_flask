@@ -6,7 +6,6 @@ from datetime import datetime
 app = Flask(__name__)
 
 
-#Configuracion de la BBDD
 USER_DB = 'postgres'
 PASS_DB = 'admin'
 URL_DB = 'localhost'
@@ -17,12 +16,9 @@ app.config['SQLALCHEMY_DATABASE_URI'] = FULL_URL_DB
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-#Creamos el objeto db de SQLAlchemy
 db=SQLAlchemy(app)
 
-#Creacion de la tabla en la BBDD (La tabla se va a llamar blogpost en minusucula por default)
 class Blogpost(db.Model):
-    #Columnas de la tabla (todas las tablas deberian tener un ID)
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(50))
     subtitle = db.Column(db.String(50))
