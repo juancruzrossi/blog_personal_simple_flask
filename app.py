@@ -6,10 +6,10 @@ from datetime import datetime
 app = Flask(__name__)
 
 
-USER_DB = 'postgres'
-PASS_DB = 'admin'
-URL_DB = 'localhost'
-NAME_DB = 'blog_db'
+USER_DB = '...'
+PASS_DB = '...'
+URL_DB = '...'
+NAME_DB = '...'
 FULL_URL_DB = f'postgresql://{USER_DB}:{PASS_DB}@{URL_DB}/{NAME_DB}'
 
 app.config['SQLALCHEMY_DATABASE_URI'] = FULL_URL_DB
